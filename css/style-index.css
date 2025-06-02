@@ -227,6 +227,24 @@ button:hover, .btn:hover {
     to { opacity: 1; transform: scale(1); }
 }
 
+footer {
+  background: linear-gradient(135deg, #144552, #1a6478);
+  color: #e0f7fa;
+  padding: 4rem 2rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+  border-top: 4px solid #4dd0e1;
+}
+
+.footercontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  gap: 2.5rem;
+}
+
 
 
 
