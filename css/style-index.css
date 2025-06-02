@@ -306,6 +306,34 @@ footer {
 }
 
 
+.footerbotoes ul li a::before {
+  content: "→";
+  font-weight: 900;
+  color: #4dd0e1;
+  transition: color 0.35s ease;
+}
+
+.footerbotoes ul li a:hover::before {
+  color: #00acc1;
+}
+
+.footercontact p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #b4e1e9;
+  margin-bottom: 0.8rem;
+}
+
+.footer-btn {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1.5px solid #29b6f6;
+  padding-top: 1.3rem;
+  font-size: 0.95rem;
+  color: #82d0e8;
+  text-align: center;
+  font-style: italic;
+}
 
 
 
