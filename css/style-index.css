@@ -20,3 +20,30 @@ body {
     overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #004769;
+    margin-bottom: 1.2rem;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
+}
+
+p, section p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    color: #5f7b8d;
+    text-align: justify;
+}
+
+a {
+    color: #008cba;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #006b8c;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
