@@ -197,6 +197,37 @@ section iframe {
 }
 
 
+button, .btn {
+    padding: 0.9rem 1.8rem;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #008cba 0%, #006b8c 100%);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover, .btn:hover {
+    background: linear-gradient(135deg, #006b8c 0%, #004769 100%);
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInScale {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+
 
 
 
