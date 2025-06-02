@@ -271,6 +271,41 @@ footer {
   font-family: 'Montserrat', sans-serif;
 }
 
+.footercontent p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #c0e9f1;
+  margin-bottom: 1rem;
+}
+
+.footerbotoes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerbotoes ul li {
+  margin-bottom: 1rem;
+}
+
+.footerbotoes ul li a {
+  color: #80deea;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.05rem;
+  transition: color 0.35s ease;
+}
+
+.footerbotoes ul li a:hover {
+  color: #26c6da;
+  text-decoration: underline;
+  transform: translateX(5px);
+}
+
+
 
 
 
