@@ -102,5 +102,19 @@ nav ul li a {
     backdrop-filter: blur(4px);
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+nav ul li a:hover {
+    background: linear-gradient(135deg, #00bfff 0%, #0077cc 100%);
+    color: #ffffff;
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 255, 255, 0.6);
+    border-color: #00ffff;
+}
+
+
+nav ul li a:hover::before {
+    left: 180%;
+}
+
+
 
 
