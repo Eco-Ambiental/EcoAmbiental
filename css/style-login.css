@@ -37,4 +37,30 @@ body, html {
   animation: aparecer 1s ease;
 }
 
+.login-box h2 {
+  font-size: 32px;
+  color: #e0f7fa;
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  font-size: 14px;
+  color: #bbdefb;
+  margin-bottom: 30px;
+}
+
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transition: background 0.3s ease;
+}
+
 
