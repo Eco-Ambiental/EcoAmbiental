@@ -170,3 +170,19 @@ footer {
   text-align: center;
   font-style: italic;
 }
+
+main div h4 {
+    background-color:#066;
+    padding:8px;
+    border-radius:10px;
+    width:65px;
+    color:#f4f7fa;
+    text-align:center;
+    margin:0 auto
+}
+.container {
+    max-width:1000px;
+    margin:40px auto;
+    padding:0 20px
+}
+
