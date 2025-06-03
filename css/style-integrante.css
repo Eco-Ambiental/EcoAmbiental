@@ -204,3 +204,55 @@ main div h4 {
     border:4px solid #066
 }
 
+.info {
+    flex:1
+}
+.info h2 {
+    margin-top:0;
+    color:#066
+}
+.info p {
+    font-size:1rem;
+    line-height:1.5
+}
+
+iframe,img,video {
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:0 auto
+}
+
+* {
+    box-sizing:border-box
+}
+body {
+    position:relative;
+    font-family:Montserrat,sans-serif;
+    min-height:100vh;
+    z-index:0
+}
+body::before {
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image:url('../img/HospitalDasClinicas.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity:.2;
+    z-index:-1;
+    pointer-events:none
+}
+
+*,nav ul {
+    padding:0;
+    margin:0
+}
+
+.integrante {
+    display:flex
+}
