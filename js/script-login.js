@@ -1,18 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector(".form");
+function login(event) {
+            event.preventDefault();
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const senha = document.getElementById('senha').value;
 
-        form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Impede envio padrão
-
-            const nome = form.querySelector('input[placeholder="Seu nome"]').value.trim();
-            const email = form.querySelector('input[placeholder="Seu e-mail"]').value.trim();
-            const senha = form.querySelector('input[placeholder="Sua senha"]').value.trim();
-
-            if (nome && email && senha) {
-                console.log(`Login bem-sucedido: ${nome} - ${email}`);
-                window.location.href = "index.html"; // Redireciona
+            
+            if (nome && email && senha.length >= 6) {
+                alert("Bem-vindo ao Eco Ambiental, " + nome + "!");
+                window.location.href = "index.html"; 
             } else {
-                alert("Por favor, preencha todos os campos.");
+                alert("Preencha todos os campos corretamente!");
             }
-        });
-    });
+        }
