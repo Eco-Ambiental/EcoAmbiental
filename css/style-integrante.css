@@ -399,3 +399,37 @@ footer {
 .integrante:nth-child(2) { animation-delay: 0.2s; }
 .integrante:nth-child(3) { animation-delay: 0.3s; }
 .integrante:nth-child(4) { animation-delay: 0.4s; }
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons img {
+  width: 35px;
+  height: 35px;
+  border: none;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
