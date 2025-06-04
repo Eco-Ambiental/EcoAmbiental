@@ -144,3 +144,68 @@ footer {
   }
 }
 
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .login-box {
+    padding: 20px;
+    max-width: 320px;
+  }
+
+  .login-box h2 {
+    font-size: 24px;
+  }
+
+  .login-box p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .login-box input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .login-box button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+
+@media (min-width: 600px) {
+  .login-box {
+    max-width: 360px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .login-box {
+    max-width: 380px;
+    padding: 40px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .login-box {
+    max-width: 400px;
+  }
+}
+
+
+@media (min-width: 1300px) {
+  .login-box {
+    max-width: 420px;
+  }
+}
+

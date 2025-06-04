@@ -110,7 +110,7 @@ main {
   animation: fadeInUp 0.8s ease-out;
 }
 
-/* Estilos específicos para Solução */
+
 .solution-section {
   margin-bottom: 3rem;
   padding: 2rem;
@@ -277,31 +277,64 @@ footer {
   font-style: italic;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+
+@media (max-width: 600px) {
   nav {
     flex-direction: column;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .nav-links {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    margin-top: 1rem;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
   }
 
   .nav-links li {
-    margin: 0.5rem 0;
+    width: 100%;
+  }
+
+  .logo h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
   }
 
   main {
-    margin: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
   }
 
   .solution-content {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .solution-section {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .solution-item {
+    padding: 1rem;
+  }
+
+  .solution-item h3 {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (min-width: 600px) {
+  main {
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  .solution-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 
   .solution-section {
@@ -309,7 +342,103 @@ footer {
   }
 }
 
-/* Animações de Entrada */
+
+@media (min-width: 768px) {
+  nav {
+    padding: 1rem 3rem;
+  }
+
+  main {
+    padding: 2rem;
+    margin: 1.5rem auto;
+  }
+
+  .solution-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .solution-section {
+    padding: 2rem;
+  }
+}
+
+
+@media (min-width: 992px) {
+  main {
+    max-width: 900px;
+  }
+
+  .solution-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (min-width: 1300px) {
+  main {
+    max-width: 1400px;
+    padding: 3rem 2rem;
+  }
+
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.5rem; }
+  h3 { font-size: 2rem; }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .solution-content {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+
+  .solution-section {
+    padding: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .solution-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .solution-item {
+    padding: 2rem;
+  }
+
+  .solution-item h3 {
+    font-size: 1.6rem;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+  }
+
+  .logo h1 {
+    font-size: 2.2rem;
+  }
+
+  .footercontent {
+    max-width: 1400px;
+  }
+
+  .footercontent h3 {
+    font-size: 1.8rem;
+  }
+
+  .footercontent p {
+    font-size: 1.1rem;
+  }
+
+  .footerbotoes ul li a {
+    font-size: 1.1rem;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
