@@ -56,6 +56,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 nav {
@@ -106,6 +107,7 @@ main {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 /* Estilos específicos para Solução */
@@ -115,6 +117,8 @@ main {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: slideInRight 0.8s ease-out;
+  animation-fill-mode: both;
 }
 
 .solution-section h2 {
@@ -138,6 +142,8 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
   border-left: 4px solid #4dd0e1;
+  animation: fadeInUp 0.5s ease-out;
+  animation-fill-mode: both;
 }
 
 .solution-item:hover {
@@ -157,6 +163,11 @@ main {
   border-radius: 8px;
   margin-bottom: 1rem;
 }
+
+.solution-item:nth-child(1) { animation-delay: 0.1s; }
+.solution-item:nth-child(2) { animation-delay: 0.2s; }
+.solution-item:nth-child(3) { animation-delay: 0.3s; }
+.solution-item:nth-child(4) { animation-delay: 0.4s; }
 
 /* Footer */
 footer {
@@ -295,5 +306,28 @@ footer {
 
   .solution-section {
     padding: 1.5rem;
+  }
+}
+
+/* Animações de Entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
