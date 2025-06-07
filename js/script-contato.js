@@ -15,6 +15,39 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Função para salvar dados no LocalStorage
+    function saveFormData() {
+        const formData = {
+            nome: document.getElementById('nome').value,
+            email: document.getElementById('email').value,
+            telefone: document.getElementById('telefone').value,
+            assunto: document.getElementById('assunto').value,
+            mensagem: document.getElementById('mensagem').value
+        };
+        localStorage.setItem('contactFormData', JSON.stringify(formData));
+    }
+
+    // Função para carregar dados do LocalStorage
+    function loadFormData() {
+        const savedData = localStorage.getItem('contactFormData');
+        if (savedData) {
+            const formData = JSON.parse(savedData);
+            document.getElementById('nome').value = formData.nome || '';
+            document.getElementById('email').value = formData.email || '';
+            document.getElementById('telefone').value = formData.telefone || '';
+            document.getElementById('assunto').value = formData.assunto || '';
+            document.getElementById('mensagem').value = formData.mensagem || '';
+        }
+    }
+
+    // Carregar dados salvos quando a página for carregada
+    loadFormData();
+
+    // Salvar dados quando houver mudanças nos campos
+    form.querySelectorAll('input, select, textarea').forEach(element => {
+        element.addEventListener('change', saveFormData);
+    });
+
     // Formatar telefone automaticamente
     const telefoneInput = document.getElementById('telefone');
     telefoneInput.addEventListener('input', (e) => {
@@ -23,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             valor = valor.replace(/^(\d{2})(\d)/g, '($1) $2');
             valor = valor.replace(/(\d)(\d{4})$/, '$1-$2');
             e.target.value = valor;
+            saveFormData(); // Salvar após formatação
         }
     });
 
@@ -104,7 +138,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             console.log('Dados do formulário:', formData);
             
-            // Limpar formulário após envio
+            // Limpar formulário e LocalStorage após envio
+            localStorage.removeItem('contactFormData');
             form.reset();
             alert('Mensagem enviada com sucesso!');
         }
