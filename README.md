@@ -1,36 +1,52 @@
-# Projeto: Soluções para Desastres Naturais 🌪️🌊🔥
+# 🌱 EcoAmbiental
 
-## 📝 Descrição
+Projeto desenvolvido com foco em **monitoramento ambiental e conscientização ecológica**, utilizando tecnologias web acessíveis e informativas.
 
-Este projeto foi desenvolvido como parte das atividades acadêmicas da disciplina de Desenvolvimento Web. O objetivo é criar um site informativo e interativo que apresente **soluções tecnológicas e sustentáveis para desastres naturais**, como enchentes, terremotos, deslizamentos e incêndios florestais.
+## 📌 Objetivo do Projeto
 
-A proposta busca conscientizar os usuários sobre os impactos desses eventos e mostrar alternativas viáveis de prevenção, resposta e reconstrução, usando uma interface acessível e de fácil navegação.
+Monitorar o degelo nas regiões polares e em cidades costeiras para medir o nível da água em tempo real usando sensores, e fornecer alertas e ações sugeridas para empresas globais, a fim de diminuir o aquecimento global e conscientizar os problemas causados pelo derretimento. Assim informando as providências necessárias para diminuir o aquecimento global, consequentemente diminuir os deslizamentos e derretimentos de gelo.
 
-## 💻 Tecnologias Utilizadas
+## 🗂️ Estrutura de Pastas e Arquivos
 
-- **HTML5**: Estruturação do conteúdo do site.
-- **CSS3**: Estilização das páginas para um design responsivo e visualmente agradável.
-- **JavaScript (JS)**: Implementação de funcionalidades interativas, como sliders, animações e possíveis simulações educativas.
+EcoAmbiental/
+├── css/ # Estilos personalizados por página
+│ ├── style-contato.css
+│ ├── style-faq.css
+│ ├── style-index.css
+│ ├── style-integrante.css
+│ ├── style-login.css
+│ └── style-solucao.css
+│
+├── img/ # Imagens do projeto
+│
+├── js/ # Scripts JavaScript 
+│
+├── contato.html # Página de contato
+├── faq.html # Página de perguntas frequentes
+├── index.html 
+├── Integrante.html # Página com informações dos membros
+├── login.html # Página de login/registro
+├── solucao.html # Página com a proposta ecológica da solução
+└── README.md # Documentação do projeto
 
-## 👨‍💻 Integrantes do Grupo
 
-| Nome Completo                    | RM      | Turma   |
-|----------------------------------|---------|---------|
-| Murillo Fernandes Carapia        | 564969  | 1TDSPH  |
-| Leonardo Zerbinatti de Sales     | 562992  | 1TDSPH  |
-| Breno da Fonseca Eleutério       | 564948  | 1TDSPY  |
+## 🛠️ Tecnologias Utilizadas
 
+- **HTML5**
+- **CSS3 (Responsivo e com animações)**
+- **JavaScript (Interações e lógica de interface)**
+- **Git e GitHub** para versionamento
 
-## 🎯 Objetivos do Site
+## 👥 Integrantes
 
-- Informar a população sobre riscos e tipos de desastres naturais.
-- Apresentar soluções práticas e tecnológicas.
-- Estimular a conscientização e a preparação da comunidade.
-- Criar uma experiência visual agradável e informativa.
+- **Murillo Fernandes Carapia** – RM: 564969  
+- **Leonardo Zerbinatti de Sales** – RM: 562992  
+- **Breno da Fonseca Eleutério** - RM: 564948
 
-## 📆 Status do Projeto
+## 🔗 Repositório no GitHub
 
-🚧 Em desenvolvimento...
+[https://github.com/Eco-Ambiental/EcoAmbiental](https://github.com/Eco-Ambiental/EcoAmbiental)
 
 ---
+
 
